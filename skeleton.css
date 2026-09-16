@@ -1,0 +1,517 @@
+/*
+ * Scale Map skeleton — visual mockup only.
+ *
+ * Tokens are lifted verbatim from app/globals.css on `main` so this reads as the
+ * same object as the real app. Where a value here has no counterpart on main it
+ * is marked NEW and exists only because the skeleton has scenes main doesn't.
+ */
+
+:root {
+  --ink:        #0d0d12;
+  --ink-2:      #111116;
+  --surface:    rgba(255,255,255,0.02);
+  --line:       rgba(255,255,255,0.08);
+  --line-2:     rgba(255,255,255,0.14);
+
+  --brand:      #34b433;
+  --brand-2:    #34d399;
+  --brand-dim:  #1d5f2b;
+
+  --warn:       #fbbf24;
+  --danger:     #ef4444;
+
+  --t1: #ffffff;
+  --t2: #e4e4e7;
+  --t3: #a1a1aa;
+  --t4: #71717a;
+  --t5: #52525b;
+  --t6: #3f3f46;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', ui-monospace, monospace;
+
+  /* The prospect's own brand colour is injected per-map in the real app. We do
+     not know the example prospect's, and inventing one would be inventing data,
+     so this stays on the QS green fallback. */
+  --accent: #34b433;
+  --accent-soft: rgba(52,180,51,0.14);
+
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--ink);
+  color: var(--t2);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  color: var(--t1);
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  margin: 0;
+}
+
+p { margin: 0; }
+
+/* ── chrome ────────────────────────────────────────────────────────── */
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--t5);
+}
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 9px;
+  vertical-align: middle;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.snap {
+  scroll-snap-type: y proximity;
+  overflow-y: auto;
+  height: 100svh;
+  scroll-behavior: smooth;
+}
+
+.scene {
+  min-height: 100svh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  padding: 56px 20px 104px;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .scene { padding: 72px 56px 104px; }
+}
+
+.wrap { width: 100%; max-width: 760px; margin: 0 auto; }
+
+/* NEW — the skeleton has no countdown bar, so the rail carries scene position. */
+.rail {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px calc(14px + env(safe-area-inset-bottom));
+  background: linear-gradient(to top, var(--ink) 55%, rgba(13,13,18,0));
+}
+.dots { display: flex; gap: 7px; }
+.dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--t6);
+  border: 0; padding: 0;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.dot[aria-current='true'] { background: var(--accent); transform: scale(1.5); }
+.rail-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--t5);
+}
+
+/* NEW — honesty tag. This is a mockup and should never be mistaken for the app. */
+.mocktag {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 50;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--t5);
+  background: var(--ink-2);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-bottom-right-radius: 8px;
+  padding: 5px 10px;
+}
+
+/* ── type scale ────────────────────────────────────────────────────── */
+
+.h-xl { font-size: 30px; line-height: 1.12; }
+.h-lg { font-size: 26px; line-height: 1.15; }
+.h-md { font-size: 19px; line-height: 1.25; }
+.lede { font-size: 16px; line-height: 1.55; color: var(--t3); }
+.body { font-size: 15px; line-height: 1.6; color: var(--t3); }
+.small { font-size: 13px; line-height: 1.55; color: var(--t4); }
+.micro { font-size: 12px; line-height: 1.5; color: var(--t5); }
+
+@media (min-width: 768px) {
+  .h-xl { font-size: 48px; }
+  .h-lg { font-size: 38px; }
+  .h-md { font-size: 22px; }
+  .lede { font-size: 18px; }
+}
+
+.accent { color: var(--accent); }
+.t1 { color: var(--t1); }
+.t2 { color: var(--t2); }
+
+.mt-2 { margin-top: 8px; }
+.mt-3 { margin-top: 12px; }
+.mt-4 { margin-top: 16px; }
+.mt-5 { margin-top: 20px; }
+.mt-6 { margin-top: 24px; }
+.mt-8 { margin-top: 32px; }
+
+/* ── scene 1 · open ────────────────────────────────────────────────── */
+
+.urlbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 560px) {
+  .urlbar { flex-direction: row; }
+}
+.urlfield {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--line-2);
+  border-radius: 12px;
+  padding: 0 14px;
+  height: 52px;
+}
+.urlfield span.scheme {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--t5);
+  flex-shrink: 0;
+}
+.urlfield input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: var(--t1);
+  font-family: var(--font-sans);
+  font-size: 16px; /* 16px stops iOS zooming the page on focus */
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background: linear-gradient(135deg, #34b433, #2a9129);
+  cursor: pointer;
+  transition: transform 0.12s ease, filter 0.2s ease;
+}
+.btn:hover { filter: brightness(1.06); }
+.btn:active { transform: scale(0.985); }
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.btn-wide { width: 100%; }
+@media (min-width: 560px) {
+  .btn-wide { width: auto; }
+}
+
+/* ── scene 2 · mirror + pickers ────────────────────────────────────── */
+
+.mirror { padding: 18px; }
+.mirror dl { margin: 0; display: grid; gap: 14px; }
+.mirror dt {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--t5);
+  margin-bottom: 4px;
+}
+.mirror dd { margin: 0; font-size: 15px; line-height: 1.5; color: var(--t2); }
+
+/* Reset as a class, not inline: an inline `margin:0` silently beat the .mt-8
+   utility on the fieldset and collapsed the gap between the mirror and the
+   first picker. */
+.opts-group {
+  border: 0;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  min-width: 0;
+}
+
+.picker-legend {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--t1);
+  padding: 0;
+  margin: 0 0 4px;
+}
+.picker-hint { margin-bottom: 12px; }
+
+.opts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 0; padding: 0; margin: 0;
+}
+
+.opt {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 14px 11px 12px;
+  border: 1px solid var(--line-2);
+  border-radius: 11px;
+  background: var(--surface);
+  color: var(--t3);
+  font-size: 14px;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+  /* Tap targets stay ≥44px tall on a phone. */
+  min-height: 44px;
+}
+.opt:hover { border-color: var(--t6); color: var(--t2); }
+.opt input { position: absolute; opacity: 0; pointer-events: none; }
+.opt .box {
+  width: 17px; height: 17px;
+  flex-shrink: 0;
+  border: 1px solid var(--line-2);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  color: #000;
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+.opt[data-on='true'] {
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  background: var(--accent-soft);
+  color: var(--t1);
+}
+.opt[data-on='true'] .box {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.opt:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ── scene 3 · diagnosis ───────────────────────────────────────────── */
+
+/*
+ * The hedge. It is styled as a quiet aside rather than a warning banner: it is
+ * a statement of what we can and can't know, not an error, and a yellow alert
+ * box would read as "something went wrong".
+ */
+.hedge {
+  border-left: 2px solid var(--t6);
+  padding: 2px 0 2px 14px;
+}
+
+.block { padding: 18px; }
+
+.block-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.block-head .pip {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.head-good { color: var(--brand-2); }
+.head-good .pip { background: var(--brand-2); }
+.head-bad { color: var(--warn); }
+.head-bad .pip { background: var(--warn); }
+
+/* Credit before critique: this ordering is load-bearing per the spec, so the
+   working block carries a faint accent wash to make sure it reads first. */
+.block-good {
+  border-color: color-mix(in srgb, var(--brand-2) 22%, transparent);
+  background: color-mix(in srgb, var(--brand-2) 5%, transparent);
+}
+
+.finding + .finding {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.finding-t { font-size: 15px; font-weight: 600; color: var(--t1); line-height: 1.35; }
+.finding-b { font-size: 14px; line-height: 1.55; color: var(--t4); margin-top: 5px; }
+
+/*
+ * Desktop splits the diagnosis into two columns purely to fit: at 1280x800 the
+ * single-column version was 1165px tall and the brief forbids a scene that
+ * scrolls on desktop. The split is column-wise, never row-wise — "what's
+ * working" and "what isn't" stay in ONE column so the credit-before-critique
+ * ordering survives. On phones both columns stack and the reading order is
+ * unchanged: working → broken → requirements → promise.
+ */
+.dx { display: grid; gap: 12px; }
+.dx-col { min-width: 0; }
+@media (min-width: 900px) {
+  /* Asymmetric on purpose: the left column carries five findings and the right
+     carries two blocks, so an even split leaves the right half empty while the
+     left one wraps every line. The extra width buys back roughly a line per
+     finding, which is most of what stopped the scene fitting in 800px. */
+  .dx { grid-template-columns: 1.18fr 0.82fr; gap: 18px; align-items: start; }
+  #s3 .wrap { max-width: 1060px; }
+  #s3 { padding-top: 28px; padding-bottom: 48px; }
+  #s3 .h-lg { font-size: 33px; }
+  #s3 .block { padding: 16px; }
+  #s3 .finding + .finding { margin-top: 11px; padding-top: 11px; }
+
+  /* Scene 2 gets the same column treatment for the same reason: two stacked
+     pickers put the submit button 1090px down the page. Channels and problems
+     are independent questions, so side-by-side costs the reader nothing. */
+  #s2 .dx { grid-template-columns: 1fr 1fr; }
+  #s2 .mt-0-lg { margin-top: 0; }
+  #s2 { padding-top: 48px; padding-bottom: 72px; }
+}
+
+.reqs { margin: 0; padding: 0; list-style: none; counter-reset: req; }
+.reqs li {
+  counter-increment: req;
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--t2);
+}
+.reqs li + li { margin-top: 12px; }
+.reqs li::before {
+  content: counter(req);
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  margin-top: 1px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.promise {
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  background: var(--accent-soft);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+/* ── scene 4 · proof ───────────────────────────────────────────────── */
+
+.proofs { display: grid; gap: 12px; }
+@media (min-width: 900px) {
+  .proofs { grid-template-columns: repeat(3, 1fr); }
+}
+
+.proof { padding: 18px; display: flex; flex-direction: column; }
+.proof-name { font-size: 16px; font-weight: 700; color: var(--t1); }
+.proof-co {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--t5);
+  margin-top: 3px;
+}
+.proof-q {
+  margin: 14px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--t2);
+  border-left: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  padding-left: 12px;
+}
+.proof-why {
+  margin-top: auto;
+  padding-top: 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--t5);
+}
+.proof-why b { color: var(--t3); font-weight: 600; }
+
+/* ── scene 5 · cta ─────────────────────────────────────────────────── */
+
+.cta-wrap { text-align: center; }
+.cta-when {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 15px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--t4);
+}
+.btn-lg { height: 58px; padding: 0 34px; font-size: 17px; }
+
+/* ── motion ────────────────────────────────────────────────────────── */
+
+.rise {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.rise.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .snap { scroll-behavior: auto; }
+  .rise { opacity: 1; transform: none; }
+}

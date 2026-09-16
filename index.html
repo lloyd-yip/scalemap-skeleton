@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Scale Map — skeleton</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="skeleton.css" />
+</head>
+<body>
+
+<div class="mocktag">Skeleton · no logic wired</div>
+
+<main class="snap" id="snap">
+
+  <!-- ══ 1 · OPEN ══════════════════════════════════════════════════ -->
+  <section class="scene" id="s1" aria-labelledby="s1h">
+    <div class="wrap">
+      <p class="eyebrow rise">Business Scale Map</p>
+
+      <h1 class="h-xl mt-4 rise" id="s1h">
+        Paste your website.<br />
+        <span class="accent">We&rsquo;ll read it before you arrive.</span>
+      </h1>
+
+      <p class="lede mt-5 rise" style="max-width: 52ch;">
+        Two questions, sixty seconds, and you get a read on why growth is behaving
+        the way it is in your business specifically &mdash; not in businesses generally.
+      </p>
+
+      <div class="urlbar mt-8 rise">
+        <label class="urlfield" for="url">
+          <span class="scheme">https://</span>
+          <input id="url" type="text" value="your-business.example.com"
+                 autocomplete="off" spellcheck="false" aria-label="Your website address" />
+        </label>
+        <button class="btn btn-wide" data-go="#s2">Read my site &rarr;</button>
+      </div>
+
+      <p class="micro mt-4 rise">
+        Nothing to fill in but the address. You can correct whatever we get wrong on the next screen.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ 2 · ASK ═══════════════════════════════════════════════════ -->
+  <section class="scene" id="s2" aria-labelledby="s2h">
+    <div class="wrap">
+      <p class="eyebrow rise">Check our reading</p>
+
+      <h2 class="h-lg mt-4 rise" id="s2h">Here&rsquo;s what we read. Fix anything we got wrong.</h2>
+
+      <p class="body mt-3 rise" style="max-width: 56ch;">
+        Not so we can tell you about your own business &mdash; you know it far better
+        than we do. Only so the rest of this is about you and not about someone
+        vaguely like you.
+      </p>
+
+      <div class="card mirror mt-5 rise">
+        <dl>
+          <div>
+            <dt>What you sell</dt>
+            <dd>Executive and team coaching &mdash; leadership development run as a
+                structured program rather than one-off sessions.</dd>
+          </div>
+          <div>
+            <dt>Who you sell to</dt>
+            <dd>CEOs, C-suite executives and senior leadership teams.</dd>
+          </div>
+          <div>
+            <dt>Where you are</dt>
+            <dd>Tucson, Arizona &middot; 23 years in business &middot; a team of four.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="dx mt-8">
+      <fieldset class="opts-group rise">
+        <legend class="picker-legend">Where does business come from today?</legend>
+        <p class="small picker-hint">Tick everything that&rsquo;s actually running.</p>
+        <div class="opts" data-picker="channels">
+          <!-- options injected from the same list as lib/selection.ts -->
+        </div>
+      </fieldset>
+
+      <fieldset class="opts-group mt-6 mt-0-lg rise">
+        <legend class="picker-legend">What&rsquo;s going wrong with it?</legend>
+        <p class="small picker-hint">Be honest here &mdash; it&rsquo;s the only part we can&rsquo;t work out from your site.</p>
+        <div class="opts" data-picker="problems">
+          <!-- options injected -->
+        </div>
+      </fieldset>
+
+      </div>
+
+      <div class="mt-8 rise">
+        <button class="btn btn-wide" data-go="#s3">Build my map &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 3 · DIAGNOSIS ═════════════════════════════════════════════ -->
+  <section class="scene" id="s3" aria-labelledby="s3h">
+    <div class="wrap">
+      <p class="eyebrow rise">Your situation</p>
+
+      <h2 class="h-lg mt-4 rise" id="s3h">
+        Twenty-three years of reputation, and still no way to know what next
+        quarter looks like.
+      </h2>
+
+      <!-- The hedge. Two channels named ⇒ `hedged` confidence: we may not
+           attribute a problem to a specific channel, and the copy has to say so
+           out loud rather than quietly generalising. -->
+      <p class="hedge body mt-4 rise">
+        You named two places business comes from &mdash; people who refer you, and
+        rooms you speak in. We can&rsquo;t tell from here which one is causing the
+        swing, and we&rsquo;d be guessing if we said. This is what&rsquo;s true of both.
+      </p>
+
+      <div class="dx mt-5">
+      <div class="dx-col">
+      <!-- Credit before critique. This block renders ABOVE the broken one and
+           that ordering is load-bearing, not a layout preference. On desktop the
+           scene splits into two columns — both of these stay in the SAME column
+           so "working above broken" holds at every width. -->
+      <div class="card block block-good rise">
+        <p class="block-head head-good"><span class="pip"></span>What&rsquo;s already working</p>
+        <div class="mt-3">
+          <div class="finding">
+            <p class="finding-t">The right people are the ones reaching you.</p>
+            <p class="finding-b">You didn&rsquo;t say the wrong buyers show up. With a
+              C-suite buyer, that&rsquo;s reputation filtering for you &mdash; most
+              businesses are trying to buy what you already have.</p>
+          </div>
+          <div class="finding">
+            <p class="finding-t">The economics work.</p>
+            <p class="finding-b">Cost wasn&rsquo;t on your list, so this isn&rsquo;t a pricing
+              problem wearing a growth problem&rsquo;s clothes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card block mt-3 rise">
+        <p class="block-head head-bad"><span class="pip"></span>What isn&rsquo;t</p>
+        <div class="mt-3">
+          <div class="finding">
+            <p class="finding-t">It swings, and you can&rsquo;t see it coming.</p>
+            <p class="finding-b">Both channels wait on someone else to act &mdash; a
+              client to mention you, an organiser to book you.</p>
+          </div>
+          <div class="finding">
+            <p class="finding-t">There aren&rsquo;t enough of them.</p>
+            <p class="finding-b">Reputation is capped by how many people have already
+              met you, and that number rises on its own terms.</p>
+          </div>
+          <div class="finding">
+            <p class="finding-t">All of it runs through you.</p>
+            <p class="finding-b">With a team of four and both channels needing you in
+              the room, your calendar is the ceiling.</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="dx-col">
+      <div class="rise">
+        <p class="block-head" style="color: var(--t5);"><span class="pip" style="background: var(--t5);"></span>What would have to change</p>
+        <ol class="reqs mt-3">
+          <li>Conversations start without you starting them.</li>
+          <li>Next quarter is knowable in advance, not discovered.</li>
+          <li>The filtering reputation does now keeps happening at higher volume.</li>
+        </ol>
+      </div>
+
+      <div class="promise mt-4 rise">
+        <p class="body t2"><b class="t1">On the session:</b> what a coaching business
+          with a C-suite buyer does once referrals stop being the whole plan &mdash;
+          and what the first ninety days look like from here.</p>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 4 · PROOF ═════════════════════════════════════════════════ -->
+  <section class="scene" id="s4" aria-labelledby="s4h">
+    <div class="wrap">
+      <p class="eyebrow rise">We&rsquo;ve been here before</p>
+
+      <h2 class="h-lg mt-4 rise" id="s4h">Different businesses. Same before-state.</h2>
+
+      <p class="body mt-3 rise" style="max-width: 54ch;">
+        These aren&rsquo;t coaches. They&rsquo;re picked because they walked in describing
+        your situation, not your industry.
+      </p>
+
+      <div class="proofs mt-6 rise">
+
+        <article class="card proof">
+          <p class="proof-name">Greg Smart</p>
+          <p class="proof-co">500 More &middot; United Kingdom</p>
+          <blockquote class="proof-q">
+            &ldquo;My motivation&hellip; was actually pretty focused and targeted on how do
+            I find a systematic way to generate more leads.&rdquo;
+          </blockquote>
+          <p class="proof-why"><b>Why this one:</b> arrived naming the same two
+            things you did &mdash; not enough of them, and no way to predict them.</p>
+        </article>
+
+        <article class="card proof">
+          <p class="proof-name">Jason Rotman</p>
+          <p class="proof-co">Elevate Financial &middot; United States</p>
+          <blockquote class="proof-q">
+            &ldquo;It has produced more quality leads in literally a month than I
+            probably got in nine to twelve months of just traditional prospecting.&rdquo;
+          </blockquote>
+          <p class="proof-why"><b>Why this one:</b> an independent advisor whose
+            growth ran entirely through him personally, same as yours does.</p>
+        </article>
+
+        <article class="card proof">
+          <p class="proof-name">Karl Lashkari</p>
+          <p class="proof-co">Men of Mastery &middot; Global</p>
+          <blockquote class="proof-q">
+            &ldquo;I&rsquo;ve invested in other consultants and other things in the past.
+            One thing that really stood out about [the program] was&hellip;&rdquo;
+          </blockquote>
+          <p class="proof-why"><b>Why this one:</b> sells a high-trust coaching
+            relationship to senior people &mdash; the closest thing here to what you do.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 5 · CTA ═══════════════════════════════════════════════════ -->
+  <section class="scene" id="s5" aria-labelledby="s5h">
+    <div class="wrap cta-wrap">
+      <p class="eyebrow rise" style="display:inline-block;">Your next step</p>
+
+      <h2 class="h-xl mt-4 rise" id="s5h">
+        You know what&rsquo;s wrong.<br />
+        <span class="accent">Come and find out what changes it.</span>
+      </h2>
+
+      <p class="lede mt-5 rise" style="max-width: 46ch; margin-left:auto; margin-right:auto;">
+        Ninety minutes, live, no recording. Built for exactly the situation
+        above &mdash; a business that works, growing in a way that doesn&rsquo;t.
+      </p>
+
+      <div class="mt-8 rise">
+        <button class="btn btn-lg">Save my seat &rarr;</button>
+      </div>
+
+      <div class="mt-6 rise">
+        <span class="cta-when">Thursday &middot; 11:00 AM MST</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="rail" aria-label="Scene navigation">
+  <span class="rail-label" id="railLabel">1 / 5 &middot; Open</span>
+  <div class="dots" id="dots"></div>
+</nav>
+
+<script src="skeleton.js"></script>
+</body>
+</html>
