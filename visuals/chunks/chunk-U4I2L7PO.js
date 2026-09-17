@@ -1,15 +1,15 @@
 import {
   fitScale
-} from "/scalemap-skeleton/visuals/chunks/chunk-XZJUOAQS.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-ILJBQGGO.js";
 import {
   C,
   MONO,
   SANS,
   __toESM,
   require_jsx_runtime
-} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-APJWEUBL.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/primitives.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.ZvOiU35XK0/components/visuals/primitives.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 function Ground({ tint = "#101418" }) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(

@@ -4,18 +4,18 @@ import {
   Mono,
   Pill,
   Txt
-} from "/scalemap-skeleton/visuals/chunks/chunk-KE47FXAC.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-IPEKD3IY.js";
 import {
   Visual
-} from "/scalemap-skeleton/visuals/chunks/chunk-CZOOTBVB.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-HXNXTKDP.js";
 import {
   C,
   __toESM,
   require_jsx_runtime,
   sweep
-} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-APJWEUBL.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/channels/PaidAds.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.ZvOiU35XK0/components/visuals/channels/PaidAds.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 var DURATION = 9e3;
 var FREEZE = 0.55;

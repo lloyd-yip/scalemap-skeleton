@@ -4,20 +4,20 @@ import {
   Mono,
   Pill,
   Txt
-} from "/scalemap-skeleton/visuals/chunks/chunk-KE47FXAC.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-IPEKD3IY.js";
 import {
   ME,
   PEOPLE
-} from "/scalemap-skeleton/visuals/chunks/chunk-CVUQ5NKE.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-DIYN2IBD.js";
 import {
   Slot
-} from "/scalemap-skeleton/visuals/chunks/chunk-I3XW4O5R.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-U4I2L7PO.js";
 import {
   Visual
-} from "/scalemap-skeleton/visuals/chunks/chunk-CZOOTBVB.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-HXNXTKDP.js";
 import {
   useIdentity
-} from "/scalemap-skeleton/visuals/chunks/chunk-XZJUOAQS.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-ILJBQGGO.js";
 import {
   C,
   SANS,
@@ -25,9 +25,9 @@ import {
   require_jsx_runtime,
   sm,
   sweep
-} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-APJWEUBL.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/channels/ColdEmail.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.ZvOiU35XK0/components/visuals/channels/ColdEmail.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 var DURATION = 12e3;
 var FREEZE = 0.7;

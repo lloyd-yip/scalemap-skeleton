@@ -4,12 +4,12 @@ import {
   __toESM,
   require_jsx_runtime,
   require_react
-} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-APJWEUBL.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/Stage.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.ZvOiU35XK0/components/visuals/Stage.tsx
 var import_react2 = __toESM(require_react());
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/useVisualClock.ts
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.ZvOiU35XK0/components/visuals/useVisualClock.ts
 var import_react = __toESM(require_react());
 var STEP_MS = 42;
 var raf = 0;
@@ -71,7 +71,7 @@ function useVisualClock(durationMs, freeze, active = true) {
   return ms % durationMs / durationMs;
 }
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/Stage.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.ZvOiU35XK0/components/visuals/Stage.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 function Stage({
   children,

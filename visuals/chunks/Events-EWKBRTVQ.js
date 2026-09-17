@@ -2,19 +2,19 @@
 import {
   EVENTS_PHOTO,
   EVENTS_PHOTO_CREDIT
-} from "/scalemap-skeleton/visuals/chunks/chunk-CVUQ5NKE.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-DIYN2IBD.js";
 import {
   Visual
-} from "/scalemap-skeleton/visuals/chunks/chunk-CZOOTBVB.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-HXNXTKDP.js";
 import {
   C,
   MONO,
   __toESM,
   require_jsx_runtime,
   sm
-} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-APJWEUBL.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/channels/Events.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.ZvOiU35XK0/components/visuals/channels/Events.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 var DURATION = 12e3;
 var FREEZE = 0.9;

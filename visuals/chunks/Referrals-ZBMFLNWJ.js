@@ -2,24 +2,24 @@
 import {
   ME,
   PEOPLE
-} from "/scalemap-skeleton/visuals/chunks/chunk-CVUQ5NKE.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-DIYN2IBD.js";
 import {
   Slot
-} from "/scalemap-skeleton/visuals/chunks/chunk-I3XW4O5R.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-U4I2L7PO.js";
 import {
   Visual
-} from "/scalemap-skeleton/visuals/chunks/chunk-CZOOTBVB.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-HXNXTKDP.js";
 import {
   useIdentity
-} from "/scalemap-skeleton/visuals/chunks/chunk-XZJUOAQS.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-ILJBQGGO.js";
 import {
   C,
   MONO,
   __toESM,
   require_jsx_runtime
-} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-APJWEUBL.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/channels/Referrals.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.ZvOiU35XK0/components/visuals/channels/Referrals.tsx
 var import_jsx_runtime = (
   // eslint-disable-next-line @next/next/no-img-element -- fixed-size decorative
   // stage element inside a transform-scaled 1600x900 scene; next/image's layout
