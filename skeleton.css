@@ -30,9 +30,9 @@
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', ui-monospace, monospace;
 
-  /* The prospect's own brand colour is injected per-map in the real app. We do
-     not know the example prospect's, and inventing one would be inventing data,
-     so this stays on the QS green fallback. */
+  /* The prospect's own brand colour is injected per-map in the real app. The
+     example persona here is fictional and has no brand colour, so this stays on
+     the QS green fallback. */
   --accent: #34b433;
   --accent-soft: rgba(52,180,51,0.14);
 
