@@ -1,7 +1,7 @@
 import {
   IdentityProvider,
   resolveIdentity
-} from "./chunks/chunk-3S2JCU5X.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-XZJUOAQS.js";
 import {
   C,
   MONO,
@@ -10,7 +10,7 @@ import {
   __toESM,
   require_jsx_runtime,
   require_react
-} from "./chunks/chunk-OW6SPI7U.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
 
 // node_modules/scheduler/cjs/scheduler.development.js
 var require_scheduler_development = __commonJS({
@@ -22525,23 +22525,23 @@ var require_client = __commonJS({
   }
 });
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/project-control/visuals-publish/src/entry.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/project-control/visuals-publish/src/entry.tsx
 var import_react4 = __toESM(require_react());
 var import_client = __toESM(require_client());
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/app/(dev)/visuals/page.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/app/(dev)/visuals/page.tsx
 var import_react3 = __toESM(require_react());
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/VisualCard.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/VisualCard.tsx
 var import_react2 = __toESM(require_react());
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/project-control/visuals-publish/src/next-dynamic-shim.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/project-control/visuals-publish/src/next-dynamic-shim.tsx
 var import_react = __toESM(require_react());
 function dynamic(loader, _opts) {
   return (0, import_react.lazy)(loader);
 }
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/registry.ts
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/registry.ts
 var CHANNEL_IDS = [
   "referrals",
   "linkedin",
@@ -22560,21 +22560,21 @@ var PROBLEM_IDS = [
   "inconsistency"
 ];
 var PROBLEMS = {
-  "manual-time": dynamic(() => import("./chunks/ManualTime-WGNFAHHB.js"), { ssr: false }),
-  "lead-quantity": dynamic(() => import("./chunks/LeadQuantity-VN2KQXOY.js"), { ssr: false }),
-  "lead-quality": dynamic(() => import("./chunks/LeadQuality-GFZELGQV.js"), { ssr: false }),
-  "cost-per-result": dynamic(() => import("./chunks/CostPerResult-35IEEM2C.js"), { ssr: false }),
-  inconsistency: dynamic(() => import("./chunks/Inconsistency-M3WUVLNO.js"), { ssr: false })
+  "manual-time": dynamic(() => import("/scalemap-skeleton/visuals/chunks/ManualTime-WRWJGXBF.js"), { ssr: false }),
+  "lead-quantity": dynamic(() => import("/scalemap-skeleton/visuals/chunks/LeadQuantity-QLVSFLA6.js"), { ssr: false }),
+  "lead-quality": dynamic(() => import("/scalemap-skeleton/visuals/chunks/LeadQuality-GJAEWHL3.js"), { ssr: false }),
+  "cost-per-result": dynamic(() => import("/scalemap-skeleton/visuals/chunks/CostPerResult-6CM2WWXT.js"), { ssr: false }),
+  inconsistency: dynamic(() => import("/scalemap-skeleton/visuals/chunks/Inconsistency-XAQKLPCW.js"), { ssr: false })
 };
 var CHANNELS = {
-  referrals: dynamic(() => import("./chunks/Referrals-5WGWNTAA.js"), { ssr: false }),
-  linkedin: dynamic(() => import("./chunks/LinkedIn-75TTPAIH.js"), { ssr: false }),
-  "cold-email": dynamic(() => import("./chunks/ColdEmail-O7OM54NU.js"), { ssr: false }),
-  "paid-ads": dynamic(() => import("./chunks/PaidAds-QM23EYDQ.js"), { ssr: false }),
-  content: dynamic(() => import("./chunks/Content-APN7QFKI.js"), { ssr: false }),
-  events: dynamic(() => import("./chunks/Events-2V37YHV5.js"), { ssr: false }),
-  partnerships: dynamic(() => import("./chunks/Partnerships-IRUT2ALF.js"), { ssr: false }),
-  "nothing-yet": dynamic(() => import("./chunks/NothingYet-LWPPPCDM.js"), { ssr: false })
+  referrals: dynamic(() => import("/scalemap-skeleton/visuals/chunks/Referrals-XAAINNFV.js"), { ssr: false }),
+  linkedin: dynamic(() => import("/scalemap-skeleton/visuals/chunks/LinkedIn-TCSSL7M2.js"), { ssr: false }),
+  "cold-email": dynamic(() => import("/scalemap-skeleton/visuals/chunks/ColdEmail-4GUESGSZ.js"), { ssr: false }),
+  "paid-ads": dynamic(() => import("/scalemap-skeleton/visuals/chunks/PaidAds-ISJWD6A5.js"), { ssr: false }),
+  content: dynamic(() => import("/scalemap-skeleton/visuals/chunks/Content-UFZORS6N.js"), { ssr: false }),
+  events: dynamic(() => import("/scalemap-skeleton/visuals/chunks/Events-3PVEBHP7.js"), { ssr: false }),
+  partnerships: dynamic(() => import("/scalemap-skeleton/visuals/chunks/Partnerships-GAESYVK4.js"), { ssr: false }),
+  "nothing-yet": dynamic(() => import("/scalemap-skeleton/visuals/chunks/NothingYet-VJHCTRAS.js"), { ssr: false })
 };
 var VISUALS = { ...CHANNELS, ...PROBLEMS };
 var TITLES = {
@@ -22593,7 +22593,7 @@ var TITLES = {
   inconsistency: "Unpredictable, inconsistent results"
 };
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/VisualCard.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/VisualCard.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 function VisualCard({
   id,
@@ -22671,7 +22671,7 @@ function VisualCard({
   ] });
 }
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/app/(dev)/visuals/page.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/app/(dev)/visuals/page.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime());
 var FIXTURE = { company: "Northfield Ops", domain: "northfield-ops.com", person: null };
 var LONG = { company: "Henderson Whitfield Partners", domain: "hendersonwhitfieldpartners.co.uk", person: null };
@@ -22761,7 +22761,7 @@ function VisualsHarness() {
   ] }) }) });
 }
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/project-control/visuals-publish/src/entry.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/project-control/visuals-publish/src/entry.tsx
 var import_jsx_runtime3 = __toESM(require_jsx_runtime());
 var el = document.getElementById("root");
 if (!el) throw new Error("#root missing");

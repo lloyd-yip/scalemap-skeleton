@@ -1,17 +1,17 @@
 "use client";
 import {
   ChannelCaption
-} from "./chunk-ZZUCHOD4.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-KE47FXAC.js";
 import {
   Visual
-} from "./chunk-OFMDNVDX.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-CZOOTBVB.js";
 import {
   MONO,
   __toESM,
   require_jsx_runtime
-} from "./chunk-OW6SPI7U.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/channels/NothingYet.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/channels/NothingYet.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 var DURATION = 6e3;
 var FREEZE = 0.6;

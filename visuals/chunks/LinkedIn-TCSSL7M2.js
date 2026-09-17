@@ -5,20 +5,20 @@ import {
   Mono,
   Pill,
   Txt
-} from "./chunk-ZZUCHOD4.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-KE47FXAC.js";
 import {
   ME,
   PEOPLE
-} from "./chunk-XOU77S2L.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-CVUQ5NKE.js";
 import {
   Slot
-} from "./chunk-4SJJXYI3.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-I3XW4O5R.js";
 import {
   Visual
-} from "./chunk-OFMDNVDX.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-CZOOTBVB.js";
 import {
   useIdentity
-} from "./chunk-3S2JCU5X.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-XZJUOAQS.js";
 import {
   C,
   MONO,
@@ -26,9 +26,9 @@ import {
   __toESM,
   require_jsx_runtime,
   sm
-} from "./chunk-OW6SPI7U.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/channels/LinkedInDm.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/channels/LinkedInDm.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 var SHEILA = PEOPLE.find((p) => p.name === "Sheila")?.src ?? "";
 function LinkedInDm({
@@ -137,7 +137,7 @@ function LinkedInDm({
   ] });
 }
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/channels/LinkedInPost.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/channels/LinkedInPost.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime());
 function LinkedInPost({ who, headline }) {
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Card, { style: { left: 446, top: 244, width: 700 }, children: [
@@ -198,7 +198,7 @@ function LinkedInPost({ who, headline }) {
   ] });
 }
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/channels/LinkedIn.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/channels/LinkedIn.tsx
 var import_jsx_runtime3 = __toESM(require_jsx_runtime());
 var DURATION = 11e3;
 var FREEZE = 0.72;

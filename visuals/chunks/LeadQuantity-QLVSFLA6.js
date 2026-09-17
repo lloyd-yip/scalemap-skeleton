@@ -4,19 +4,19 @@ import {
   Caption,
   Ground,
   Lbl
-} from "./chunk-4SJJXYI3.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-I3XW4O5R.js";
 import {
   Visual
-} from "./chunk-OFMDNVDX.js";
-import "./chunk-3S2JCU5X.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-CZOOTBVB.js";
+import "/scalemap-skeleton/visuals/chunks/chunk-XZJUOAQS.js";
 import {
   C,
   GROUND_TINT,
   __toESM,
   require_jsx_runtime
-} from "./chunk-OW6SPI7U.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/problems/LeadQuantity.tsx
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/problems/LeadQuantity.tsx
 var import_jsx_runtime = __toESM(require_jsx_runtime());
 var DURATION = 7e3;
 var FREEZE = 0.42;

@@ -1,9 +1,9 @@
 import {
   __toESM,
   require_react
-} from "./chunk-OW6SPI7U.js";
+} from "/scalemap-skeleton/visuals/chunks/chunk-2I5PAATC.js";
 
-// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.iE4usXHG8y/components/visuals/identity.ts
+// ../../../../private/var/folders/qr/91qws8gs1w50j6wlj202tbnc0000gn/T/tmp.uqsJpFb5oI/components/visuals/identity.ts
 var import_react = __toESM(require_react());
 var FALLBACK = {
   company: "Your company",
